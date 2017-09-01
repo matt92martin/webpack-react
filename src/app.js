@@ -7,7 +7,7 @@ class App extends Component{
     render(){
         return (
             <div>
-                React app
+                React app test
             </div>
         );
     }

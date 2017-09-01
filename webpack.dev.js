@@ -6,6 +6,9 @@ const htmlOptions = require('./webpack/options.js').dev;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = Merge(CommonConfig, {
+    entry:{
+        app: './src/index.js'
+    },
     output: {
         filename: '[name].bundle.js',
     },
@@ -18,5 +21,7 @@ module.exports = Merge(CommonConfig, {
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin(htmlOptions)
+
+
     ]
 });
