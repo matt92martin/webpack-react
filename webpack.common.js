@@ -12,16 +12,13 @@ const removeOptions = {
 
 
 module.exports = {
-    entry: {
-        app: './src/index.js'
-    },
     output: {
         path: path.join(__dirname, 'dist'),
         publicPath: "/"
     },
     plugins: [
         new CleanWebpackPlugin(toRemove, removeOptions),
-        // new webpack.NoEmitOnErrorsPlugin(),
+        new webpack.NoEmitOnErrorsPlugin(),
     ],
     resolve: {
         extensions: ['.js', '.jsx'],

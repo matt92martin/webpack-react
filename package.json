@@ -30,9 +30,7 @@
     "webpack-merge": "^4.1.0"
   },
   "scripts": {
-    "build:dev": "webpack --env=dev--progress --profile --colors",
     "build:dist": "webpack --env=prod --progress --profile --colors",
-    "watch": "webpack --watch",
     "start": "webpack-dev-server --env=dev",
     "server": "node server.js"
   }
